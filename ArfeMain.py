@@ -8,10 +8,8 @@ import os
 
 class App:
     def __init__(self, root):
-        #setting title
         root.title("ARFE | Aes&Rsa Folder Encryptor")
         self.root=root
-        #setting window size
         width=550
         height=300
         self.filepath=''
@@ -71,12 +69,10 @@ class App:
     def select_folder(self):
         self.filepath = filedialog.askdirectory()
         self.folderlabel["text"]=self.filepath
-
     def select_key(self):
         filetypes = (('bin files', '*.bin'),('all files', '*.*'))
         self.keypath = filedialog.askopenfilename(filetypes=filetypes)
         self.keylabel["text"]=self.keypath
-
     def encrypt(self):
         if not os.path.exists(self.filepath):
             messagebox.showerror("folderpath", "Select folder path")
@@ -94,7 +90,6 @@ class App:
             self.root.update()
         self.progresbar["value"]=0
         messagebox.showinfo("Encryption","Encryption completed")
-
     def decrypt(self):
         if not os.path.exists(self.filepath):
             messagebox.showerror("folderpath", "Select folder path")
@@ -112,7 +107,6 @@ class App:
             self.root.update()
         self.progresbar["value"]=0
         messagebox.showinfo("Decryption","Decryption completed")
-
 if __name__ == "__main__":
     root = ThemedTk(theme='breeze')
     app = App(root)

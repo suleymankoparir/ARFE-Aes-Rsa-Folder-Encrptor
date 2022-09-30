@@ -13,8 +13,6 @@ def main():
     RsaProtocol.create_key(path)
     RsaProtocol.encryption(os.path.join(path, "public.pem"), path, password)
     print("Key generation completed")
-    
-    
 if __name__ == "__main__":
     main()
 

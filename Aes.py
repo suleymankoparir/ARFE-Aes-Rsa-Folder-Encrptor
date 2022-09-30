@@ -8,8 +8,7 @@ class AesProtocol:
         key = str.encode(key)
         cipher = AES.new(key, AES.MODE_CBC)
         file=open(os.path.join(file_path, file_name),'rb').read()
-        cipher_text = cipher.encrypt(pad(file, AES.block_size))
-        
+        cipher_text = cipher.encrypt(pad(file, AES.block_size))    
         with open(os.path.join(output_path, file_name), 'wb') as kfile:
             kfile.write(cipher.iv)
             kfile.write(cipher_text)

@@ -15,8 +15,6 @@ def main():
         print("password does not contain 32 character")
         sys.exit()
     RsaProtocol.encryption(keypath, path, password)
-    print("Key generation completed")
-    
-    
+    print("Key generation completed") 
 if __name__ == "__main__":
     main()
