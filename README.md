@@ -8,6 +8,7 @@ Keys can be generated in two different ways.
 python ArfeKeyCreator.py [path] [password]
 ```
 Key must contain 32 characters
+
 **Example usage**
 ```
 python ArfeKeyCreator.py C:\Users\johndoe\Desktop\keys 3ShIofRMm4zyLws1xc7RWxNyD2Le2MKc
