@@ -23,3 +23,9 @@ python ArfeKeyCreatorFromPublic.py C:\Users\johndoe\Desktop\keys C:\Users\johndo
 ```
 ### UI
 [![](https://i.imgur.com/iuVmDSV.jpeg)](https://i.imgur.com/iuVmDSV.jpeg)
+
+
+### Libraries
+- tkinter
+- ttkthemes
+- pycryptodome
