@@ -1,6 +1,6 @@
 import os
 from tkinter import ttk, messagebox, StringVar, filedialog
-from Rsa import RsaProtocol
+from encryptions.rsa import RsaProtocol
 
 class KeyGeneratorTab(ttk.Frame):
     def __init__(self, parent):

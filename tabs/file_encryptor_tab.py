@@ -1,7 +1,7 @@
 import os
 from tkinter import ttk, filedialog, messagebox, StringVar
-from Rsa import RsaProtocol
-from Aes import AesProtocol
+from encryptions.rsa import RsaProtocol
+from encryptions.aes import AesProtocol
 
 class FileEncryptorTab(ttk.Frame):
     def __init__(self, parent):

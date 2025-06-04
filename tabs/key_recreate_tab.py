@@ -1,7 +1,7 @@
 import os
 from tkinter import ttk, filedialog, messagebox, StringVar
 
-from Rsa import RsaProtocol
+from encryptions.rsa import RsaProtocol
 
 class KeyRecreateTab(ttk.Frame):
     def __init__(self, parent):
